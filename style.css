@@ -1,1 +1,102 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(173, 173, 238);
+}
+.container{
+ height: 100vh;
+ width: 100vw;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.box{
+    background-color: white;
+    width: 400px;
+    /* height: 500px; */
+    padding: 25px;
+
+}
+input{
+    width: 80%;
+    padding: 6px 10px;
+    margin: 10px;
+    height: 45px;
+    font-size: 16px;
+}
+.btn{
+ padding: 6px 8px;
+ background: rgb(184, 5, 255);
+ color: aliceblue;
+ cursor: pointer;
+ border: none;
+ border-radius: 2px;
+ height: 45px;
+ width: 45px;
+ opacity: 0.6;
+ pointer-events: none;
+}
+
+.inputfield button.active{
+opacity: 1;
+pointer-events: auto;
+}
+
+.btn:hover{
+    background: rgb(154, 49, 196);
+}
+
+.box .todo-list{
+max-height: 250px;
+overflow-y: auto;
+}
+.todo-list li{
+    list-style: none;
+    height: 45px;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    line-height: 45px;
+    padding: 0 15px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+}
+.todo-list li span{
+    position: absolute;
+    right: -45px;
+    width: 45px;
+    background: #e74c3c;
+    text-align: center;
+    transition: all 0.3s ease;
+    
+}
+.todo-list li:hover span{
+right: 0;
+}
+.box .footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.clear-btn{
+border: none;
+padding: 6px 10px;
+background: rgb(184, 5, 255);
+font-size: 16px;
+color: white;
+border-radius: 3px;
+opacity: 0.6;
+pointer-events: none;
+}
+.clear-btn.active{
+    opacity: 1;
+    pointer-events: auto;
+}
